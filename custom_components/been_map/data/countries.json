@@ -1,0 +1,614 @@
+{
+  "countries": {
+    "AF": {
+      "name": "Afghanistan",
+      "path": "M 560,190 L 600,190 L 600,230 L 560,230 Z",
+      "bounding_box": [29.0, 39.0, 60.0, 75.0]
+    },
+    "AL": {
+      "name": "Albania",
+      "path": "M 490,150 L 500,150 L 500,160 L 490,160 Z",
+      "bounding_box": [39.0, 43.0, 19.0, 21.0]
+    },
+    "DZ": {
+      "name": "Algeria",
+      "path": "M 430,190 L 470,190 L 470,230 L 430,230 Z",
+      "bounding_box": [18.0, 37.0, -9.0, 12.0]
+    },
+    "AD": {
+      "name": "Andorra",
+      "path": "M 430,140 L 435,140 L 435,145 L 430,145 Z",
+      "bounding_box": [42.0, 43.0, 1.0, 2.0]
+    },
+    "AO": {
+      "name": "Angola",
+      "path": "M 490,350 L 530,350 L 530,400 L 490,400 Z",
+      "bounding_box": [-18.0, -5.0, 11.0, 24.0]
+    },
+    "AR": {
+      "name": "Argentina",
+      "path": "M 200,320 L 240,380 L 230,450 L 200,440 L 190,360 Z",
+      "bounding_box": [-55.0, -21.0, -74.0, -53.0]
+    },
+    "AM": {
+      "name": "Armenia",
+      "path": "M 540,160 L 550,160 L 550,170 L 540,170 Z",
+      "bounding_box": [38.0, 42.0, 43.0, 51.0]
+    },
+    "AU": {
+      "name": "Australia",
+      "path": "M 680,380 L 760,380 L 760,440 L 680,440 Z",
+      "bounding_box": [-44.0, -10.0, 112.0, 154.0]
+    },
+    "AT": {
+      "name": "Austria",
+      "path": "M 480,130 L 510,130 L 510,150 L 480,150 Z",
+      "bounding_box": [46.0, 49.0, 9.0, 17.0]
+    },
+    "AZ": {
+      "name": "Azerbaijan",
+      "path": "M 550,160 L 560,160 L 560,170 L 550,170 Z",
+      "bounding_box": [38.0, 42.0, 44.0, 51.0]
+    },
+    "BD": {
+      "name": "Bangladesh",
+      "path": "M 620,230 L 640,230 L 640,250 L 620,250 Z",
+      "bounding_box": [20.0, 27.0, 88.0, 93.0]
+    },
+    "BY": {
+      "name": "Belarus",
+      "path": "M 510,90 L 530,90 L 530,110 L 510,110 Z",
+      "bounding_box": [51.0, 56.0, 23.0, 33.0]
+    },
+    "BE": {
+      "name": "Belgium",
+      "path": "M 440,120 L 460,120 L 460,130 L 440,130 Z",
+      "bounding_box": [49.0, 52.0, 2.0, 6.0]
+    },
+    "BO": {
+      "name": "Bolivia",
+      "path": "M 210,280 L 240,280 L 240,320 L 210,320 Z",
+      "bounding_box": [-23.0, -9.0, -69.0, -57.0]
+    },
+    "BA": {
+      "name": "Bosnia and Herzegovina",
+      "path": "M 480,140 L 490,140 L 490,150 L 480,150 Z",
+      "bounding_box": [42.0, 45.0, 15.0, 20.0]
+    },
+    "BR": {
+      "name": "Brazil",
+      "path": "M 220,250 L 280,250 L 290,350 L 240,380 L 210,320 Z",
+      "bounding_box": [-34.0, 5.0, -74.0, -34.0]
+    },
+    "BG": {
+      "name": "Bulgaria",
+      "path": "M 500,150 L 520,150 L 520,160 L 500,160 Z",
+      "bounding_box": [41.0, 44.0, 22.0, 29.0]
+    },
+    "KH": {
+      "name": "Cambodia",
+      "path": "M 640,280 L 660,280 L 660,310 L 640,310 Z",
+      "bounding_box": [10.0, 15.0, 102.0, 108.0]
+    },
+    "CM": {
+      "name": "Cameroon",
+      "path": "M 460,300 L 490,300 L 490,330 L 460,330 Z",
+      "bounding_box": [1.0, 14.0, 8.0, 17.0]
+    },
+    "CA": {
+      "name": "Canada",
+      "path": "M 150,30 L 280,30 L 280,80 L 150,80 Z",
+      "bounding_box": [41.0, 84.0, -141.0, -52.0]
+    },
+    "CL": {
+      "name": "Chile",
+      "path": "M 190,360 L 200,360 L 200,450 L 190,450 Z",
+      "bounding_box": [-56.0, -17.0, -76.0, -66.0]
+    },
+    "CN": {
+      "name": "China",
+      "path": "M 580,140 L 680,140 L 680,220 L 580,220 Z",
+      "bounding_box": [18.0, 54.0, 73.0, 135.0]
+    },
+    "CO": {
+      "name": "Colombia",
+      "path": "M 180,240 L 220,240 L 230,280 L 190,280 Z",
+      "bounding_box": [-4.0, 13.0, -79.0, -66.0]
+    },
+    "CR": {
+      "name": "Costa Rica",
+      "path": "M 160,230 L 180,230 L 180,240 L 160,240 Z",
+      "bounding_box": [7.0, 11.0, -86.0, -82.0]
+    },
+    "HR": {
+      "name": "Croatia",
+      "path": "M 470,140 L 480,140 L 480,150 L 470,150 Z",
+      "bounding_box": [42.0, 47.0, 13.0, 20.0]
+    },
+    "CU": {
+      "name": "Cuba",
+      "path": "M 200,200 L 220,200 L 220,210 L 200,210 Z",
+      "bounding_box": [19.0, 24.0, -85.0, -74.0]
+    },
+    "CY": {
+      "name": "Cyprus",
+      "path": "M 510,160 L 520,160 L 520,170 L 510,170 Z",
+      "bounding_box": [34.0, 36.0, 32.0, 35.0]
+    },
+    "CZ": {
+      "name": "Czech Republic",
+      "path": "M 490,120 L 520,120 L 520,140 L 490,140 Z",
+      "bounding_box": [48.0, 51.0, 12.0, 19.0]
+    },
+    "DK": {
+      "name": "Denmark",
+      "path": "M 480,80 L 500,80 L 500,100 L 480,100 Z",
+      "bounding_box": [54.0, 58.0, 8.0, 15.0]
+    },
+    "DO": {
+      "name": "Dominican Republic",
+      "path": "M 230,220 L 250,220 L 250,230 L 230,230 Z",
+      "bounding_box": [17.0, 20.0, -72.0, -68.0]
+    },
+    "EC": {
+      "name": "Ecuador",
+      "path": "M 170,270 L 190,270 L 190,290 L 170,290 Z",
+      "bounding_box": [-5.0, 2.0, -82.0, -75.0]
+    },
+    "EG": {
+      "name": "Egypt",
+      "path": "M 500,200 L 540,200 L 540,250 L 500,250 Z",
+      "bounding_box": [22.0, 32.0, 24.0, 37.0]
+    },
+    "SV": {
+      "name": "El Salvador",
+      "path": "M 150,230 L 160,230 L 160,240 L 150,240 Z",
+      "bounding_box": [13.0, 15.0, -90.0, -87.0]
+    },
+    "EE": {
+      "name": "Estonia",
+      "path": "M 500,60 L 510,60 L 510,80 L 500,80 Z",
+      "bounding_box": [57.0, 60.0, 22.0, 28.0]
+    },
+    "ET": {
+      "name": "Ethiopia",
+      "path": "M 560,300 L 600,300 L 600,350 L 560,350 Z",
+      "bounding_box": [3.0, 15.0, 33.0, 48.0]
+    },
+    "FJ": {
+      "name": "Fiji",
+      "path": "M 780,350 L 800,350 L 800,380 L 780,380 Z",
+      "bounding_box": [-19.0, -12.0, 176.0, -179.0]
+    },
+    "FI": {
+      "name": "Finland",
+      "path": "M 510,40 L 540,40 L 540,90 L 510,90 Z",
+      "bounding_box": [60.0, 70.0, 19.0, 32.0]
+    },
+    "FR": {
+      "name": "France",
+      "path": "M 440,110 L 470,110 L 470,140 L 440,140 Z",
+      "bounding_box": [41.0, 51.0, -5.0, 10.0]
+    },
+    "GE": {
+      "name": "Georgia",
+      "path": "M 540,150 L 550,150 L 550,160 L 540,160 Z",
+      "bounding_box": [41.0, 43.0, 39.0, 51.0]
+    },
+    "DE": {
+      "name": "Germany",
+      "path": "M 470,100 L 500,100 L 500,130 L 470,130 Z",
+      "bounding_box": [47.0, 55.0, 5.0, 15.0]
+    },
+    "GR": {
+      "name": "Greece",
+      "path": "M 510,160 L 530,160 L 540,180 L 510,180 Z",
+      "bounding_box": [34.0, 42.0, 19.0, 30.0]
+    },
+    "GT": {
+      "name": "Guatemala",
+      "path": "M 140,230 L 150,230 L 150,240 L 140,240 Z",
+      "bounding_box": [13.0, 18.0, -92.0, -88.0]
+    },
+    "HN": {
+      "name": "Honduras",
+      "path": "M 145,225 L 155,225 L 155,235 L 145,235 Z",
+      "bounding_box": [12.0, 16.0, -90.0, -83.0]
+    },
+    "HU": {
+      "name": "Hungary",
+      "path": "M 490,130 L 510,130 L 510,150 L 490,150 Z",
+      "bounding_box": [45.0, 49.0, 16.0, 23.0]
+    },
+    "IS": {
+      "name": "Iceland",
+      "path": "M 420,40 L 440,40 L 440,60 L 420,60 Z",
+      "bounding_box": [63.0, 67.0, -25.0, -13.0]
+    },
+    "IN": {
+      "name": "India",
+      "path": "M 580,220 L 630,220 L 640,290 L 590,280 Z",
+      "bounding_box": [6.0, 37.0, 68.0, 97.0]
+    },
+    "ID": {
+      "name": "Indonesia",
+      "path": "M 620,320 L 720,320 L 720,360 L 620,360 Z",
+      "bounding_box": [-11.0, 6.0, 95.0, 141.0]
+    },
+    "IR": {
+      "name": "Iran",
+      "path": "M 520,180 L 560,180 L 560,220 L 520,220 Z",
+      "bounding_box": [25.0, 40.0, 44.0, 63.0]
+    },
+    "IQ": {
+      "name": "Iraq",
+      "path": "M 520,170 L 550,170 L 550,200 L 520,200 Z",
+      "bounding_box": [29.0, 38.0, 38.0, 49.0]
+    },
+    "IE": {
+      "name": "Ireland",
+      "path": "M 420,100 L 435,100 L 435,120 L 420,120 Z",
+      "bounding_box": [51.0, 56.0, -11.0, -5.0]
+    },
+    "IL": {
+      "name": "Israel",
+      "path": "M 510,180 L 525,180 L 525,195 L 510,195 Z",
+      "bounding_box": [29.0, 34.0, 34.0, 36.0]
+    },
+    "IT": {
+      "name": "Italy",
+      "path": "M 470,140 L 490,140 L 500,180 L 470,170 Z",
+      "bounding_box": [36.0, 47.0, 6.0, 19.0]
+    },
+    "JP": {
+      "name": "Japan",
+      "path": "M 700,140 L 730,140 L 730,190 L 700,190 Z",
+      "bounding_box": [24.0, 46.0, 122.0, 146.0]
+    },
+    "JO": {
+      "name": "Jordan",
+      "path": "M 510,185 L 525,185 L 525,200 L 510,200 Z",
+      "bounding_box": [29.0, 34.0, 34.0, 40.0]
+    },
+    "KZ": {
+      "name": "Kazakhstan",
+      "path": "M 570,100 L 650,100 L 650,150 L 570,150 Z",
+      "bounding_box": [40.0, 56.0, 46.0, 88.0]
+    },
+    "KE": {
+      "name": "Kenya",
+      "path": "M 560,320 L 590,320 L 590,360 L 560,360 Z",
+      "bounding_box": [-5.0, 6.0, 33.0, 42.0]
+    },
+    "KP": {
+      "name": "North Korea",
+      "path": "M 680,140 L 700,140 L 700,160 L 680,160 Z",
+      "bounding_box": [33.0, 43.0, 124.0, 131.0]
+    },
+    "KR": {
+      "name": "South Korea",
+      "path": "M 680,150 L 700,150 L 700,180 L 680,180 Z",
+      "bounding_box": [33.0, 39.0, 124.0, 132.0]
+    },
+    "XK": {
+      "name": "Kosovo",
+      "path": "M 500,145 L 510,145 L 510,155 L 500,155 Z",
+      "bounding_box": [40.0, 44.0, 20.0, 23.0]
+    },
+    "KW": {
+      "name": "Kuwait",
+      "path": "M 530,190 L 545,190 L 545,200 L 530,200 Z",
+      "bounding_box": [28.0, 31.0, 46.0, 49.0]
+    },
+    "KG": {
+      "name": "Kyrgyzstan",
+      "path": "M 620,160 L 650,160 L 650,190 L 620,190 Z",
+      "bounding_box": [39.0, 43.0, 69.0, 81.0]
+    },
+    "LA": {
+      "name": "Laos",
+      "path": "M 630,290 L 650,290 L 650,310 L 630,310 Z",
+      "bounding_box": [13.0, 23.0, 100.0, 108.0]
+    },
+    "LV": {
+      "name": "Latvia",
+      "path": "M 500,70 L 520,70 L 520,90 L 500,90 Z",
+      "bounding_box": [55.0, 58.0, 20.0, 29.0]
+    },
+    "LB": {
+      "name": "Lebanon",
+      "path": "M 510,175 L 520,175 L 520,185 L 510,185 Z",
+      "bounding_box": [33.0, 35.0, 35.0, 37.0]
+    },
+    "LY": {
+      "name": "Libya",
+      "path": "M 470,200 L 510,200 L 510,260 L 470,260 Z",
+      "bounding_box": [19.0, 33.0, 9.0, 26.0]
+    },
+    "LT": {
+      "name": "Lithuania",
+      "path": "M 500,80 L 520,80 L 520,100 L 500,100 Z",
+      "bounding_box": [53.0, 57.0, 20.0, 27.0]
+    },
+    "LU": {
+      "name": "Luxembourg",
+      "path": "M 450,115 L 460,115 L 460,125 L 450,125 Z",
+      "bounding_box": [49.0, 51.0, 5.0, 7.0]
+    },
+    "MK": {
+      "name": "North Macedonia",
+      "path": "M 500,155 L 515,155 L 515,165 L 500,165 Z",
+      "bounding_box": [40.0, 43.0, 20.0, 23.0]
+    },
+    "MY": {
+      "name": "Malaysia",
+      "path": "M 600,300 L 650,300 L 650,320 L 600,320 Z",
+      "bounding_box": [0.0, 8.0, 99.0, 120.0]
+    },
+    "MT": {
+      "name": "Malta",
+      "path": "M 475,165 L 485,165 L 485,175 L 475,175 Z",
+      "bounding_box": [35.0, 37.0, 14.0, 15.0]
+    },
+    "MX": {
+      "name": "Mexico",
+      "path": "M 140,180 L 260,180 L 250,220 L 150,210 Z",
+      "bounding_box": [14.0, 33.0, -118.0, -86.0]
+    },
+    "MD": {
+      "name": "Moldova",
+      "path": "M 520,120 L 530,120 L 530,135 L 520,135 Z",
+      "bounding_box": [45.0, 49.0, 26.0, 30.0]
+    },
+    "MC": {
+      "name": "Monaco",
+      "path": "M 445,140 L 450,140 L 450,145 L 445,145 Z",
+      "bounding_box": [43.0, 44.0, 7.0, 8.0]
+    },
+    "MN": {
+      "name": "Mongolia",
+      "path": "M 650,100 L 700,100 L 700,150 L 650,150 Z",
+      "bounding_box": [41.0, 53.0, 87.0, 120.0]
+    },
+    "ME": {
+      "name": "Montenegro",
+      "path": "M 495,145 L 505,145 L 505,155 L 495,155 Z",
+      "bounding_box": [41.0, 44.0, 18.0, 21.0]
+    },
+    "MA": {
+      "name": "Morocco",
+      "path": "M 410,200 L 450,200 L 450,240 L 410,240 Z",
+      "bounding_box": [21.0, 36.0, -17.0, -1.0]
+    },
+    "MM": {
+      "name": "Myanmar",
+      "path": "M 630,250 L 660,250 L 660,290 L 630,290 Z",
+      "bounding_box": [9.0, 29.0, 92.0, 102.0]
+    },
+    "NP": {
+      "name": "Nepal",
+      "path": "M 600,220 L 620,220 L 620,240 L 600,240 Z",
+      "bounding_box": [26.0, 31.0, 80.0, 89.0]
+    },
+    "NL": {
+      "name": "Netherlands",
+      "path": "M 450,100 L 470,100 L 470,120 L 450,120 Z",
+      "bounding_box": [50.0, 54.0, 3.0, 7.0]
+    },
+    "NZ": {
+      "name": "New Zealand",
+      "path": "M 770,420 L 800,420 L 800,460 L 770,460 Z",
+      "bounding_box": [-47.0, -34.0, 166.0, 179.0]
+    },
+    "NI": {
+      "name": "Nicaragua",
+      "path": "M 155,225 L 165,225 L 165,235 L 155,235 Z",
+      "bounding_box": [10.0, 15.0, -88.0, -83.0]
+    },
+    "NG": {
+      "name": "Nigeria",
+      "path": "M 460,300 L 500,300 L 500,340 L 460,340 Z",
+      "bounding_box": [4.0, 14.0, 2.0, 15.0]
+    },
+    "NO": {
+      "name": "Norway",
+      "path": "M 470,40 L 490,40 L 490,90 L 470,90 Z",
+      "bounding_box": [58.0, 71.0, 4.0, 31.0]
+    },
+    "OM": {
+      "name": "Oman",
+      "path": "M 550,220 L 580,220 L 580,250 L 550,250 Z",
+      "bounding_box": [16.0, 27.0, 51.0, 60.0]
+    },
+    "PK": {
+      "name": "Pakistan",
+      "path": "M 550,200 L 590,200 L 590,240 L 550,240 Z",
+      "bounding_box": [23.0, 37.0, 60.0, 77.0]
+    },
+    "PA": {
+      "name": "Panama",
+      "path": "M 165,235 L 180,235 L 180,245 L 165,245 Z",
+      "bounding_box": [7.0, 10.0, -83.0, -77.0]
+    },
+    "PG": {
+      "name": "Papua New Guinea",
+      "path": "M 720,310 L 760,310 L 760,350 L 720,350 Z",
+      "bounding_box": [-11.0, -1.0, 140.0, 156.0]
+    },
+    "PY": {
+      "name": "Paraguay",
+      "path": "M 220,320 L 250,320 L 250,360 L 220,360 Z",
+      "bounding_box": [-27.0, -19.0, -63.0, -54.0]
+    },
+    "PE": {
+      "name": "Peru",
+      "path": "M 190,290 L 230,290 L 230,340 L 190,340 Z",
+      "bounding_box": [-18.0, -1.0, -82.0, -68.0]
+    },
+    "PH": {
+      "name": "Philippines",
+      "path": "M 680,270 L 720,270 L 720,310 L 680,310 Z",
+      "bounding_box": [4.0, 22.0, 116.0, 127.0]
+    },
+    "PL": {
+      "name": "Poland",
+      "path": "M 500,100 L 530,100 L 530,130 L 500,130 Z",
+      "bounding_box": [49.0, 55.0, 14.0, 24.0]
+    },
+    "PT": {
+      "name": "Portugal",
+      "path": "M 400,150 L 410,150 L 410,180 L 400,180 Z",
+      "bounding_box": [36.0, 42.0, -10.0, -6.0]
+    },
+    "QA": {
+      "name": "Qatar",
+      "path": "M 545,210 L 555,210 L 555,220 L 545,220 Z",
+      "bounding_box": [24.0, 27.0, 50.0, 52.0]
+    },
+    "RO": {
+      "name": "Romania",
+      "path": "M 510,140 L 540,140 L 540,170 L 510,170 Z",
+      "bounding_box": [43.0, 49.0, 20.0, 30.0]
+    },
+    "RU": {
+      "name": "Russia",
+      "path": "M 570,40 L 750,40 L 750,130 L 570,130 Z",
+      "bounding_box": [41.0, 81.0, 19.0, 169.0]
+    },
+    "SA": {
+      "name": "Saudi Arabia",
+      "path": "M 520,230 L 580,230 L 580,280 L 520,280 Z",
+      "bounding_box": [16.0, 33.0, 34.0, 56.0]
+    },
+    "RS": {
+      "name": "Serbia",
+      "path": "M 495,140 L 510,140 L 510,155 L 495,155 Z",
+      "bounding_box": [41.0, 47.0, 18.0, 24.0]
+    },
+    "SK": {
+      "name": "Slovakia",
+      "path": "M 500,120 L 520,120 L 520,140 L 500,140 Z",
+      "bounding_box": [47.0, 50.0, 16.0, 23.0]
+    },
+    "SI": {
+      "name": "Slovenia",
+      "path": "M 475,130 L 490,130 L 490,145 L 475,145 Z",
+      "bounding_box": [45.0, 47.0, 13.0, 17.0]
+    },
+    "ZA": {
+      "name": "South Africa",
+      "path": "M 520,400 L 560,400 L 560,440 L 520,440 Z",
+      "bounding_box": [-35.0, -22.0, 16.0, 33.0]
+    },
+    "SS": {
+      "name": "South Sudan",
+      "path": "M 540,260 L 570,260 L 570,300 L 540,300 Z",
+      "bounding_box": [3.0, 13.0, 23.0, 36.0]
+    },
+    "ES": {
+      "name": "Spain",
+      "path": "M 410,140 L 440,140 L 440,170 L 410,170 Z",
+      "bounding_box": [35.0, 44.0, -10.0, 4.0]
+    },
+    "LK": {
+      "name": "Sri Lanka",
+      "path": "M 610,290 L 630,290 L 630,310 L 610,310 Z",
+      "bounding_box": [5.0, 10.0, 79.0, 83.0]
+    },
+    "SE": {
+      "name": "Sweden",
+      "path": "M 490,40 L 510,40 L 510,90 L 490,90 Z",
+      "bounding_box": [55.0, 69.0, 11.0, 24.0]
+    },
+    "CH": {
+      "name": "Switzerland",
+      "path": "M 460,130 L 480,130 L 480,150 L 460,150 Z",
+      "bounding_box": [45.0, 48.0, 5.0, 11.0]
+    },
+    "SY": {
+      "name": "Syria",
+      "path": "M 510,165 L 530,165 L 530,185 L 510,185 Z",
+      "bounding_box": [32.0, 38.0, 35.0, 43.0]
+    },
+    "TW": {
+      "name": "Taiwan",
+      "path": "M 700,190 L 720,190 L 720,210 L 700,210 Z",
+      "bounding_box": [21.0, 26.0, 119.0, 122.0]
+    },
+    "TJ": {
+      "name": "Tajikistan",
+      "path": "M 600,170 L 630,170 L 630,200 L 600,200 Z",
+      "bounding_box": [36.0, 41.0, 67.0, 76.0]
+    },
+    "TZ": {
+      "name": "Tanzania",
+      "path": "M 560,350 L 600,350 L 600,390 L 560,390 Z",
+      "bounding_box": [-12.0, -1.0, 29.0, 41.0]
+    },
+    "TH": {
+      "name": "Thailand",
+      "path": "M 630,260 L 660,260 L 660,300 L 630,300 Z",
+      "bounding_box": [5.0, 21.0, 97.0, 106.0]
+    },
+    "TR": {
+      "name": "Turkey",
+      "path": "M 500,150 L 540,150 L 540,180 L 500,180 Z",
+      "bounding_box": [36.0, 42.0, 25.0, 45.0]
+    },
+    "UA": {
+      "name": "Ukraine",
+      "path": "M 530,100 L 570,100 L 570,130 L 530,130 Z",
+      "bounding_box": [44.0, 52.0, 22.0, 40.0]
+    },
+    "AE": {
+      "name": "United Arab Emirates",
+      "path": "M 550,250 L 570,250 L 570,270 L 550,270 Z",
+      "bounding_box": [22.0, 27.0, 51.0, 57.0]
+    },
+    "GB": {
+      "name": "United Kingdom",
+      "path": "M 430,70 L 450,70 L 450,100 L 430,100 Z",
+      "bounding_box": [49.0, 61.0, -11.0, 2.0]
+    },
+    "US": {
+      "name": "United States",
+      "path": "M 150,80 L 280,80 L 290,150 L 260,180 L 160,170 L 140,120 Z",
+      "bounding_box": [24.0, 49.0, -125.0, -66.0]
+    },
+    "UY": {
+      "name": "Uruguay",
+      "path": "M 230,400 L 250,400 L 250,430 L 230,430 Z",
+      "bounding_box": [-35.0, -30.0, -58.0, -53.0]
+    },
+    "UZ": {
+      "name": "Uzbekistan",
+      "path": "M 570,150 L 620,150 L 620,190 L 570,190 Z",
+      "bounding_box": [37.0, 46.0, 55.0, 73.0]
+    },
+    "VE": {
+      "name": "Venezuela",
+      "path": "M 170,220 L 220,220 L 220,270 L 170,270 Z",
+      "bounding_box": [0.0, 13.0, -73.0, -60.0]
+    },
+    "VN": {
+      "name": "Vietnam",
+      "path": "M 650,260 L 680,260 L 680,300 L 650,300 Z",
+      "bounding_box": [8.0, 24.0, 102.0, 110.0]
+    },
+    "YE": {
+      "name": "Yemen",
+      "path": "M 540,250 L 570,250 L 570,290 L 540,290 Z",
+      "bounding_box": [12.0, 19.0, 42.0, 55.0]
+    },
+    "ZM": {
+      "name": "Zambia",
+      "path": "M 530,370 L 570,370 L 570,410 L 530,410 Z",
+      "bounding_box": [-19.0, -8.0, 21.0, 34.0]
+    },
+    "ZW": {
+      "name": "Zimbabwe",
+      "path": "M 540,400 L 580,400 L 580,440 L 540,440 Z",
+      "bounding_box": [-23.0, -15.0, 25.0, 34.0]
+    }
+  }
+}

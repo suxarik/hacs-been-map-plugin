@@ -1,0 +1,235 @@
+# Example Configuration for Been Map Integration
+
+# Integration Configuration (via UI)
+
+# When adding integration via Settings -> Devices & Services -> Add Integration -> Been Map:
+
+# Example 1: Basic Setup
+# person_entity_id: person.john
+# manual_countries: ["US", "CA", "MX"]
+# visited_color: "#4CAF50"
+# current_color: "#FF5722"
+# unvisited_color: "#FFFFFF"
+
+# Example 2: Custom Colors
+# person_entity_id: person.jane
+# manual_countries: ["GB", "FR", "DE", "IT", "ES"]
+# visited_color: "#2196F3"
+# current_color: "#FFC107"
+# unvisited_color: "#F5F5F5"
+
+# Example 3: No Manual Countries (Auto-tracking only)
+# person_entity_id: person.traveler
+# manual_countries: []
+# visited_color: "#4CAF50"
+# current_color: "#FF5722"
+# unvisited_color: "#FFFFFF"
+
+# Lovelace Card Configuration
+
+# Example 1: Basic Card
+# type: custom:been-map-card
+# entity: sensor.been_map
+# title: My Travel Map
+
+# Example 2: Custom Colors and Styling
+# type: custom:been-map-card
+# entity: sensor.been_map
+# title: World Travel Tracker
+# visited_color: '#4CAF50'
+# current_color: '#FF5722'
+# unvisited_color: '#FFFFFF'
+# border_color: '#CCCCCC'
+# border_width: 1
+# current_border_width: 3
+# height: 400
+
+# Example 3: Compact Card
+# type: custom:been-map-card
+# entity: sensor.been_map
+# title: Been Map
+# height: 300
+# border_width: 0.5
+
+# Example 4: Dark Mode Compatible
+# type: custom:been-map-card
+# entity: sensor.been_map
+# title: Travel Map
+# visited_color: '#66BB6A'
+# current_color: '#FFA726'
+# unvisited_color: '#37474F'
+# border_color: '#546E7A'
+
+# Example 5: With Manual Countries Override
+# type: custom:been-map-card
+# entity: sensor.been_map
+# title: My Travels
+# manual_countries:
+#   - US
+#   - CA
+#   - MX
+#   - GB
+#   - FR
+#   - DE
+#   - IT
+#   - ES
+#   - JP
+#   - AU
+
+# Service Examples
+
+# Add Visited Country via UI:
+# 1. Go to Developer Tools -> Services
+# 2. Select service: been_map.add_visited_country
+# 3. Enter country code: US
+# 4. Click Call Service
+
+# Automation Example: Add country when arriving
+# automation:
+#   - alias: "Add country when arriving"
+#     trigger:
+#       - platform: state
+#         entity_id: person.john
+#         to: "not_home"
+#     action:
+#       - service: been_map.add_visited_country
+#         data:
+#           country_code: "US"
+
+# Set Multiple Countries via UI:
+# 1. Go to Developer Tools -> Services
+# 2. Select service: been_map.set_visited_countries
+# 3. Enter country codes as a list: ["US", "GB", "FR", "DE"]
+# 4. Click Call Service
+
+# Automation Example: Track countries visited
+# automation:
+#   - alias: "Track visited countries"
+#     trigger:
+#       - platform: state
+#         entity_id: sensor.been_map
+#     condition:
+#       - condition: template
+#         value_template: "{{ state_attr('sensor.been_map', 'current_country') != none }}"
+#     action:
+#       - service: notify.mobile_app_my_phone
+#         data:
+#           message: "Now in {{ state_attr('sensor.been_map', 'current_country') }}! Total countries visited: {{ state_attr('sensor.been_map', 'visited_countries') | length }}"
+
+# Full Dashboard Example
+# title: My Home
+# views:
+#   - title: Travel
+#     cards:
+#       - type: custom:been-map-card
+#         entity: sensor.been_map
+#         title: World Travel Map
+#         visited_color: '#4CAF50'
+#         current_color: '#FF5722'
+#         unvisited_color: '#FFFFFF'
+#         height: 500
+#       
+#       - type: entities
+#         title: Travel Stats
+#         entities:
+#           - entity: sensor.been_map
+#               name: Countries Visited
+#           - entity: sensor.been_map
+#               attribute: current_country
+#               name: Current Location
+#           - entity: sensor.been_map
+#               attribute: visited_countries
+#               name: All Visited Countries
+
+# Country Code Reference
+
+# North America
+# US - United States
+# CA - Canada
+# MX - Mexico
+
+# Europe
+# GB - United Kingdom
+# FR - France
+# DE - Germany
+# IT - Italy
+# ES - Spain
+# NL - Netherlands
+# BE - Belgium
+# CH - Switzerland
+# AT - Austria
+# PL - Poland
+# CZ - Czech Republic
+# PT - Portugal
+# GR - Greece
+# SE - Sweden
+# NO - Norway
+# FI - Finland
+# DK - Denmark
+# IE - Ireland
+# RU - Russia
+# UA - Ukraine
+
+# Asia
+# JP - Japan
+# CN - China
+# IN - India
+# KR - South Korea
+# TH - Thailand
+# VN - Vietnam
+# ID - Indonesia
+# MY - Malaysia
+# PH - Philippines
+# PK - Pakistan
+# IR - Iran
+# SA - Saudi Arabia
+# AE - United Arab Emirates
+# TR - Turkey
+# KZ - Kazakhstan
+# UZ - Uzbekistan
+# MN - Mongolia
+# AF - Afghanistan
+# BD - Bangladesh
+# LK - Sri Lanka
+# NP - Nepal
+# MM - Myanmar
+# KH - Cambodia
+# LA - Laos
+# SG - Singapore
+
+# Oceania
+# AU - Australia
+# NZ - New Zealand
+# PG - Papua New Guinea
+# FJ - Fiji
+
+# South America
+# BR - Brazil
+# AR - Argentina
+# CO - Colombia
+# PE - Peru
+# CL - Chile
+# VE - Venezuela
+# BO - Bolivia
+# PY - Paraguay
+# UY - Uruguay
+# EC - Ecuador
+
+# Africa
+# ZA - South Africa
+# EG - Egypt
+# NG - Nigeria
+# KE - Kenya
+# MA - Morocco
+# DZ - Algeria
+# LY - Libya
+# SD - Sudan
+# ET - Ethiopia
+# TZ - Tanzania
+# CD - Democratic Republic of the Congo
+# AO - Angola
+# GH - Ghana
+# CI - Ivory Coast
+# SN - Senegal
+# MG - Madagascar
+# MU - Mauritius

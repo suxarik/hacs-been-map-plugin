@@ -1,0 +1,35 @@
+add_visited_country:
+  name: Add visited country
+  description: Manually add a country to the visited list
+  fields:
+    country_code:
+      name: Country Code
+      description: ISO 3166-1 alpha-2 country code (e.g., US, GB, FR)
+      required: true
+      example: "US"
+      selector:
+        text:
+
+remove_visited_country:
+  name: Remove visited country
+  description: Remove a country from the visited list
+  fields:
+    country_code:
+      name: Country Code
+      description: ISO 3166-1 alpha-2 country code (e.g., US, GB, FR)
+      required: true
+      example: "US"
+      selector:
+        text:
+
+set_visited_countries:
+  name: Set visited countries
+  description: Set the complete list of visited countries
+  fields:
+    country_codes:
+      name: Country Codes
+      description: List of ISO 3166-1 alpha-2 country codes
+      required: true
+      example: '["US", "GB", "FR"]'
+      selector:
+        object:

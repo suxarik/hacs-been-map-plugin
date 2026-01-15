@@ -1,0 +1,59 @@
+{
+  "title": "Been Map",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Configure Been Map",
+        "data": {
+          "person_entity_id": "Person Entity",
+          "manual_countries": "Manual Countries (comma-separated ISO codes)",
+          "visited_color": "Visited Color",
+          "current_color": "Current Location Color",
+          "unvisited_color": "Unvisited Color"
+        },
+        "data_description": {
+          "person_entity_id": "Select the person entity to track",
+          "manual_countries": "Enter country codes (e.g., US, CA, GB) to manually mark as visited",
+          "visited_color": "Color for countries that have been visited",
+          "current_color": "Color for the current location",
+          "unvisited_color": "Color for countries not yet visited"
+        }
+      }
+    },
+    "error": {
+      "invalid_person": "Invalid person entity selected"
+    }
+  },
+  "services": {
+    "add_visited_country": {
+      "name": "Add visited country",
+      "description": "Manually add a country to the visited list",
+      "fields": {
+        "country_code": {
+          "name": "Country Code",
+          "description": "ISO 3166-1 alpha-2 country code (e.g., US, GB, FR)"
+        }
+      }
+    },
+    "remove_visited_country": {
+      "name": "Remove visited country",
+      "description": "Remove a country from the visited list",
+      "fields": {
+        "country_code": {
+          "name": "Country Code",
+          "description": "ISO 3166-1 alpha-2 country code (e.g., US, GB, FR)"
+        }
+      }
+    },
+    "set_visited_countries": {
+      "name": "Set visited countries",
+      "description": "Set the complete list of visited countries",
+      "fields": {
+        "country_codes": {
+          "name": "Country Codes",
+          "description": "List of ISO 3166-1 alpha-2 country codes"
+        }
+      }
+    }
+  }
+}
