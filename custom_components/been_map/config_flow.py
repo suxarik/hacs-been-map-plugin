@@ -4,8 +4,6 @@ from __future__ import annotations
 import logging
 from typing import Any
 
-import voluptuous as vol
-
 from homeassistant import config_entries
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.core import HomeAssistant
@@ -18,7 +16,6 @@ from .const import (
     CONF_PERSON_ENTITY_ID,
     CONF_UNVISITED_COLOR,
     CONF_VISITED_COLOR,
-    DOMAIN,
     DEFAULT_CURRENT_COLOR,
     DEFAULT_UNVISITED_COLOR,
     DEFAULT_VISITED_COLOR,
@@ -32,7 +29,7 @@ def validate_person_entity(hass: HomeAssistant, person_entity_id: str) -> bool:
     return hass.states.get(person_entity_id) is not None
 
 
-class BeenMapConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
+class BeenMapConfigFlow(config_entries.ConfigFlow, domain="been_map"):
     """Handle a config flow for Been Map."""
 
     VERSION = 1
@@ -50,38 +47,27 @@ class BeenMapConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
             else:
                 await self.async_set_unique_id("been_map")
                 self._abort_if_unique_id_configured()
-                
+
                 return self.async_create_entry(
                     title="Been Map",
                     data=user_input,
                 )
 
-        data_schema = vol.Schema(
-            {
-                vol.Required(
-                    CONF_PERSON_ENTITY_ID,
-                    default="person.person",
-                ): selector.EntitySelector(
-                    selector.EntitySelectorConfig(domain="person")
-                ),
-                vol.Optional(
-                    CONF_MANUAL_COUNTRIES,
-                    default=[],
-                ): selector.ObjectSelector(),
-                vol.Optional(
-                    CONF_VISITED_COLOR,
-                    default=DEFAULT_VISITED_COLOR,
-                ): selector.ColorSelector(),
-                vol.Optional(
-                    CONF_CURRENT_COLOR,
-                    default=DEFAULT_CURRENT_COLOR,
-                ): selector.ColorSelector(),
-                vol.Optional(
-                    CONF_UNVISITED_COLOR,
-                    default=DEFAULT_UNVISITED_COLOR,
-                ): selector.ColorSelector(),
-            }
-        )
+        data_schema = {
+            "person_entity_id": selector.EntitySelector(
+                selector.EntitySelectorConfig(domain="person")
+            ),
+            "manual_countries": selector.ObjectSelector(),
+            "visited_color": selector.ColorSelector(
+                selector.ColorSelectorConfig(default=DEFAULT_VISITED_COLOR)
+            ),
+            "current_color": selector.ColorSelector(
+                selector.ColorSelectorConfig(default=DEFAULT_CURRENT_COLOR)
+            ),
+            "unvisited_color": selector.ColorSelector(
+                selector.ColorSelectorConfig(default=DEFAULT_UNVISITED_COLOR)
+            ),
+        }
 
         return self.async_show_form(
             step_id="user",
