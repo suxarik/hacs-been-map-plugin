@@ -34,6 +34,11 @@ class BeenMapConfigFlow(config_entries.ConfigFlow, domain="been_map"):
 
     VERSION = 1
 
+    def __init__(self):
+        """Initialize the config flow."""
+        super().__init__()
+        self._init_info = {}
+
     async def async_step_user(
         self, user_input: dict[str, Any] | None = None
     ) -> FlowResult:
