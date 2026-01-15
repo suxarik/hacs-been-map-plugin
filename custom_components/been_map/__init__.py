@@ -2,19 +2,14 @@
 from __future__ import annotations
 
 import logging
-from typing import Final
 
 from homeassistant.config_entries import ConfigEntry
-from homeassistant.const import Platform
 from homeassistant.core import HomeAssistant, ServiceCall
 from homeassistant.helpers.service import async_register_admin_service
 
-from .const import COUNTRIES, DOMAIN
+from .const import COUNTRIES, DOMAIN, PLATFORMS
 
 _LOGGER = logging.getLogger(__name__)
-
-DOMAIN: Final = "been_map"
-PLATFORMS: Final = (Platform.SENSOR,)
 
 
 async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:

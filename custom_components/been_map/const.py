@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 
 DOMAIN = "been_map"
+PLATFORMS = ["sensor"]
 
 # Configuration keys
 CONF_PERSON_ENTITY_ID = "person_entity_id"
