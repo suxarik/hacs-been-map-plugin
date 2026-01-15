@@ -4,12 +4,10 @@ from __future__ import annotations
 import logging
 from typing import Any
 
-import voluptuous as vol
 from homeassistant import config_entries
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.core import HomeAssistant
 from homeassistant.data_entry_flow import FlowResult
-from homeassistant.helpers import selector
 
 from .const import (
     CONF_CURRENT_COLOR,
@@ -17,7 +15,6 @@ from .const import (
     CONF_PERSON_ENTITY_ID,
     CONF_UNVISITED_COLOR,
     CONF_VISITED_COLOR,
-    DOMAIN,
     DEFAULT_CURRENT_COLOR,
     DEFAULT_UNVISITED_COLOR,
     DEFAULT_VISITED_COLOR,
@@ -56,19 +53,11 @@ class BeenMapConfigFlow(config_entries.ConfigFlow, domain="been_map"):
                 )
 
         data_schema = {
-            "person_entity_id": selector.EntitySelector(
-                selector.EntitySelectorConfig(domain="person")
-            ),
-            "manual_countries": selector.ObjectSelector(),
-            "visited_color": selector.ColorSelector(
-                selector.ColorSelectorConfig(default=DEFAULT_VISITED_COLOR)
-            ),
-            "current_color": selector.ColorSelector(
-                selector.ColorSelectorConfig(default=DEFAULT_CURRENT_COLOR)
-            ),
-            "unvisited_color": selector.ColorSelector(
-                selector.ColorSelectorConfig(default=DEFAULT_UNVISITED_COLOR)
-            ),
+            "person_entity_id": str,
+            "manual_countries": list,
+            "visited_color": str,
+            "current_color": str,
+            "unvisited_color": str,
         }
 
         return self.async_show_form(
