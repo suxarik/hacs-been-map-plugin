@@ -48,7 +48,7 @@ class BeenMapConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
             if not validate_person_entity(self.hass, user_input[CONF_PERSON_ENTITY_ID]):
                 errors[CONF_PERSON_ENTITY_ID] = "invalid_person"
             else:
-                await self.async_set_unique_id(DOMAIN)
+                await self.async_set_unique_id("been_map")
                 self._abort_if_unique_id_configured()
                 
                 return self.async_create_entry(
