@@ -4,6 +4,7 @@ from __future__ import annotations
 import logging
 from typing import Any
 
+import voluptuous as vol
 from homeassistant import config_entries
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.core import HomeAssistant
@@ -16,6 +17,7 @@ from .const import (
     CONF_PERSON_ENTITY_ID,
     CONF_UNVISITED_COLOR,
     CONF_VISITED_COLOR,
+    DOMAIN,
     DEFAULT_CURRENT_COLOR,
     DEFAULT_UNVISITED_COLOR,
     DEFAULT_VISITED_COLOR,
@@ -33,11 +35,6 @@ class BeenMapConfigFlow(config_entries.ConfigFlow, domain="been_map"):
     """Handle a config flow for Been Map."""
 
     VERSION = 1
-
-    def __init__(self):
-        """Initialize the config flow."""
-        super().__init__()
-        self._init_info = {}
 
     async def async_step_user(
         self, user_input: dict[str, Any] | None = None
